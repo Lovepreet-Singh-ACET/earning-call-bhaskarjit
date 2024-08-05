@@ -39,7 +39,7 @@ os.environ["LOG10_TOKEN"] = st.secrets["LOG10"]['LOG10_TOKEN']
 
 print("Pinecone", st.secrets["PINECONE"]['PINECONE_API_KEY'])
 embeddings = OpenAIEmbeddings()
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model="gpt-4o-mini-2024-07-18", temperature=0)
 
 ## LANGFUSE CALLBACK HANDLER
 langfuse_handler = CallbackHandler(
